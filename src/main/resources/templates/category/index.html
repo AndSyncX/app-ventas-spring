@@ -33,6 +33,7 @@
                     <td th:text="${categoria.description}"></td>
                     <td>
                         <a th:href="@{/category/edit/{id}(id=${categoria.categoryid})}" class="btn btn-warning">Editar</a>
+                        <a th:href="@{/category/delete/{id}(id=${categoria.categoryid})}" class="btn btn-warning">Eliminar</a>
                     </td>
                 </tr>
                 </tbody>

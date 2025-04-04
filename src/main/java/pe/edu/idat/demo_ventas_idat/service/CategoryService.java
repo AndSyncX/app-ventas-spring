@@ -25,13 +25,4 @@ public class CategoryService {
     public void guardarCategoria(CategoryModel category){
         categoryRepository.save(category);
     }
-
-    public CategoryModel eliminarCategoria(int id) {
-        CategoryModel category  = obtenerCategoriaXid(id);
-
-        if (category != null) {
-            categoryRepository.deleteById(id);
-        }
-        return category;
-    }
 }
