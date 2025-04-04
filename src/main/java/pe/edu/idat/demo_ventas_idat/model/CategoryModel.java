@@ -1,7 +1,7 @@
 package pe.edu.idat.demo_ventas_idat.model;
 import jakarta.persistence.*;
 
-@Entity
+    @Entity
 @Table(name = "categories")
 public class CategoryModel {
 
