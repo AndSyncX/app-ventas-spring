@@ -1,9 +1,7 @@
 package pe.edu.idat.demo_ventas_idat.service;
-
 import org.springframework.stereotype.Service;
 import pe.edu.idat.demo_ventas_idat.model.SupplierModel;
 import pe.edu.idat.demo_ventas_idat.repository.SupplierRepository;
-
 import java.util.List;
 
 @Service
@@ -25,14 +23,5 @@ public class SupplierService {
 
     public void guardarSupplier(SupplierModel supplier){
         supplierRepository.save(supplier);
-    }
-
-    public SupplierModel eliminarSupplier(int id) {
-        SupplierModel supplier  = obtenerSupplierXid(id);
-
-        if (supplier != null) {
-            supplierRepository.deleteById(id);
-        }
-        return supplier;
     }
 }

@@ -13,7 +13,6 @@ public class ProductModel {
     private Integer unitsonorder;
     private Integer reorderlevel;
     private Boolean discontinued;
-
     @ManyToOne
     @JoinColumn(name = "categoryid")
     private CategoryModel category;
@@ -83,5 +82,21 @@ public class ProductModel {
 
     public void setDiscontinued(Boolean discontinued) {
         this.discontinued = discontinued;
+    }
+
+    public CategoryModel getCategory() {
+        return category;
+    }
+
+    public void setCategory(CategoryModel category) {
+        this.category = category;
+    }
+
+    public SupplierModel getSupplier() {
+        return supplier;
+    }
+
+    public void setSupplier(SupplierModel supplier) {
+        this.supplier = supplier;
     }
 }

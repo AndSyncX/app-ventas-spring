@@ -40,10 +40,4 @@ public class CategoryController {
         categoryService.guardarCategoria(category);
         return "redirect:/category";
     }
-
-    @GetMapping("/delete/{id}")
-    public String delete(@PathVariable int id) {
-        categoryService.eliminarCategoria(id);
-        return "redirect:/category";
-    }
 }
